@@ -1,0 +1,95 @@
+\newcommand {\ministry} { \MakeUppercase{Министерство науки и высшего образования российской федерации} }
+\newcommand {\abbr} { Федеральное государственное автономное образовательное учреждение высшего образования }
+\newcommand {\university} { \textbf{<<Дальневосточный федеральный университет>>} }
+\newcommand {\universityAbbr} { \textbf{(ДВФУ)} }
+\newcommand {\school} { \MakeUppercase{ \textbf{Школа естественных наук}} }
+\newcommand {\chair} { \textbf{Кафедра информатики, математического и компьютерного моделирования} }
+\newcommand {\type} { \textbf{\MakeUppercase{Отчет}} }
+\newcommand {\worktitle} {
+	к лабораторной работе №4 по дисциплине
+	
+	«Обыкновенные дифференциальные уравнения»
+}
+\newcommand {\directionOfTraining} { 01.03.02 «Прикладная математика и информатика» }
+\newcommand {\group} { Б8119-01.03.02систпро }
+\newcommand {\fullName} { Маингарт В. А. }
+\newcommand {\city} { Владивосток }
+\newcommand {\currentDay} {4}
+\newcommand {\currentMonth} {июня}
+\newcommand {\currentYear} {21}
+
+\newcommand {\header} {
+	\vspace*{-6em}
+	{ \includegraphics[scale=0.2]{img/logo} }
+	
+	{ \fontsize{9}{9} \selectfont \ministry }
+	{ \fontsize{10}{10} \selectfont \abbr }
+	\university
+	
+	\universityAbbr
+	
+	\dhrule{3pt}{1pt}{0pt}
+	
+	\vspace{1ex}
+}
+
+\newcommand {\rightblock} {
+	\begin{multicols}{2}
+		\vfill\null
+		
+		\columnbreak
+		
+		\begin{flushleft}
+			Выполнил студент
+			
+			гр. \group
+			
+			$ \underset{\textit{(ФИО)}}{\uline{\fullName}} $
+			$ \underset{\textit{(подпись)}}{\uline{\hspace{50pt}}} $
+			
+			\vspace{2ex}
+			
+			<<\uline{\hspace{5pt}\currentDay\hspace{5pt}}>>
+			\uline{\hspace{20pt}\currentMonth\hspace{40pt}}
+			$ 20\uline{\currentYear} $ г.
+		\end{flushleft}
+	\end{multicols}
+}
+
+\newcommand {\content} {
+	\school
+	
+	\vspace{1em}
+	
+	\chair
+	
+	\vspace{2em}
+	
+	\type
+	
+	\vspace{1em}
+	
+	{
+		\fontsize{14}{16} \selectfont
+		
+		\worktitle
+		
+		\vspace{1em}
+		
+		Направление подготовки
+		
+		\directionOfTraining
+	}
+	
+	\vspace{1em}
+	
+	\rightblock
+}
+
+\newcommand {\footer} {
+	\vfill
+	
+	\textbf{г. \city}
+	
+	\textbf{20\currentYear}
+}

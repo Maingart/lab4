@@ -1,0 +1,45 @@
+\def \equationFirst {\dfrac{y''}{y'} = 2e^{2y}}
+\def \equationFirstConditionFirst { y(1) = 0 }
+\def \equationFirstConditionSecond { y'(1) = 1 }
+
+\def \equationSecond {\dfrac{y''}{y'^3} = \dfrac{1}{y^2}}
+\def \equationSecondConditionFirst { y(0) = 1 }
+\def \equationSecondConditionSecond { y'(0) = 1 }
+
+\def \systemOfEquationFirst {
+	\customCases
+		{\equationFirst}
+		{\equationFirstConditionFirst}
+		{\equationFirstConditionSecond}
+}
+
+\def \systemOfEquationSecond {
+	\customCases	
+		{\equationSecond}
+		{\equationSecondConditionFirst}
+		{\equationSecondConditionSecond}
+}
+
+\def \myspace { \vspace{0.8em} }
+
+\newcommand{\solutionItemSecond}[5]{
+	\item 
+		#2
+		
+		\myspace
+		
+		\begin{tabular}[t]{l p{9cm}}
+			\textit{Характеристика:} & #3 \\
+			\textit{Общее решение:} & $ #4 $ \\
+			\textit{Частное решение:} & $ #5 $ \\
+		\end{tabular}
+			
+		\myspace
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.4]{img/dist/output#1.pdf}
+			\caption{График уравнения #1}
+		\end{figure}
+}
+

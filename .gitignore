@@ -1,0 +1,9 @@
+*.log
+*.aux
+*.toc
+*.gz
+*.txt
+*.swp
+.idea
+.vscode
+

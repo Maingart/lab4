@@ -1,0 +1,86 @@
+\input{defines/defines_task1}
+
+\section{Задача 1.}
+\subsection{Постановка задачи}
+Для следующих линейных дифференциальных уравнений 
+дать характеристику и найти общее решение:
+
+
+\begin{enumerate}
+    \item $ \equationFirst $
+    \item $ \equationSecond $
+    \item $ \equationThird $
+    \item $ \equationFourth $
+    \item $ \equationFifth $
+\end{enumerate}
+
+\subsection{Решение}
+\begin{enumerate}
+    \solutionItemFirst
+    	{\equationFirst}
+    	{
+    		Линейное однородное дифференциальное уравнение второго порядка 
+    		с постоянными коэффициентами
+    	}
+    	{
+    		y = C_1e^{\left( \tfrac{\sqrt{17}}{2} - \tfrac{1}{2} \right)x } +
+    			C_2e^{\left(-\tfrac{\sqrt{17}}{2} - \tfrac{1}{2} \right)x }
+    	}
+    
+  	\clearpage
+  	
+  	\solutionItemFirst
+	  	{\equationSecond}
+	  	{
+	  		Линейное неоднородное дифференциальное уравнение второго порядка 
+	  		с постоянными коэффициентами
+	  	}
+	  	{
+	  		y = C_1e^x\sin{3x} + C_2e^x\cos{3x} +
+	  			\dfrac{5}{18} e^x x^3 \sin{3x} + 
+	  			+ \hspace{0.25em} \dfrac{5}{36} e^x x^2 \cos{3x} -
+	  			\dfrac{5}{108} e^x x \sin{3x}
+	  	}
+  	
+	\vspace{1.5em}
+  	
+  	\solutionItemFirst
+	  	{\equationThird}
+	  	{
+	  		Линейное однородное дифференциальное уравнение второго порядка
+	  		с переменными коэффициентами
+	  	}
+	  	{
+	  		y = C_1\ln{x}
+	  		\left( 
+	  			2\ln{\left( 2\ln{x} - 1 \right)} - 
+	  			2\ln{\left(\ln{x}\right)} + \dfrac{1}{\ln{x}}
+	  		\right) +
+	  		+ \hspace{0.25em} C_2\ln{x}
+	  	}
+  	
+	\vspace{1.5em}
+  	
+	\solutionItemFirst
+		{\equationFourth}
+		{
+			Линейное неоднородное дифференциальное уравнение второго порядка, 
+			допускающее интегрирование дважды
+		}
+		{
+			y = \dfrac{C_1 \csc{x}}{x} + C_2\csc{x} + \dfrac{e^x\csc{x}}{x}
+		}
+	
+	\vspace{1.5em}  	
+	
+  	\solutionItemFirst
+	  	{\equationFifth}
+	  	{
+	  		Линейное однородное дифференциальное уравнение второго порядка 
+	  		с переменными коэффициентами
+	  	}
+	  	{
+	  		y = C_1 (( x^2 + 1 )\arctan{x} + x) + C_2(x^2 + 1)
+	  	}
+  
+\end{enumerate}

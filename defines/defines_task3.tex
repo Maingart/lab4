@@ -1,0 +1,37 @@
+\def \equationFirst {\dfrac{dx}{dt} = (\alpha - \beta \cdot y) \cdot x} 
+\def \equationSecond {\dfrac{dy}{dt} = (\delta \cdot x - \gamma) \cdot y} 
+
+\def \system {$
+	\begin{dcases*} 
+		\equationFirst \\
+		\equationSecond
+	\end{dcases*}
+$}
+
+\def \conditions {
+	$ x(0) = y(0) = 1 $
+	 
+	$ \alpha = \gamma = 0.76  $
+	
+	$ \beta = \delta = 0.62  $
+}
+
+\input{common/crules.tex}
+
+\newcommand {\solutionItemThird} {
+	\textit{Код:}
+		\lstinputlisting{code/main.c}
+	
+	\clearpage
+	
+	\textit{Графики:}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.7]{img/dist/predator1.pdf}
+	\end{figure}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.7]{img/dist/predator2.pdf}
+	\end{figure}
+}
